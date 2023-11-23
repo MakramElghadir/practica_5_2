@@ -1,6 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Practica 5.2 : electric boogaloo</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica_5</title>
+    <script src="/script/emoji.js"></script>
+    <script src="/script/texto.js"></script>
+    <script src="/script/color.js"></script>
+    <script src="/script/gradiants.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="random_emoji" class="flex-center">
+        <h2 id="emoji" onclick="random_emoji()">🕵️​</h2>
+    </section>
+
+    <section  id="texto_usuario" class="flex-center">
+        <h2 id="texto">Escribe dentro del input</h2>
+        <input id="input_text" type="text" oninput="textInput()" minlength="1">
+    </section>
+
+    <section id="color_selection" class="flex-center">
+        <h2>Color RGB</h2>
+        <div class="quarterwidth flex-center">
+            <div id="color_output">
+              
+            </div>
+            <p>R</p>
+            <input type="range" min="0" max="255" id="R-input"class ="color-input" oninput="newColor()">
+            <p>G</p>
+            <input type="range" min="0" max="255" id="G-input"class ="color-input" oninput="newColor()">
+            <p>B</p>
+            <input type="range" min="0" max="255" id="B-input"class ="color-input" oninput="newColor()">
+        </div>
+    </section>
+    <section id="Gradiant" class="flex-center">
+        <h2>Color RGB</h2>
+        <div class="quarterwidth flex-center">
+            <div id="gradient_output">
+              Primary color selector
+            </div>
+            <p>primary Red</p>
+            <input type="range" min="0" max="255" id="R-input"class ="color-input" oninput="newGradient()">
+            <p>primary Green</p>
+            <input type="range" min="0" max="255" id="G-input"class ="color-input" oninput="newGradient()">
+            <p>primary Blue</p>
+            <input type="range" min="0" max="255" id="B-input"class ="color-input" oninput="newGradient()">
+    
+
+            <div id="secondary_color_output">
+              Secondary color selector
+            </div>
+            <p>secondary Red</p>
+            <input type="range" min="0" max="255" id="R-input"class ="color-input" oninput="newGradient()">
+            <p>secondary Green</p>
+            <input type="range" min="0" max="255" id="G-input"class ="color-input" oninput="newGradient()">
+            <p>secondary Blue</p>
+            <input type="range" min="0" max="255" id="B-input"class ="color-input" oninput="newGradient()"> 
+
+            <div id="gradient">
+                Gradient
+            </div>
+            <input type="range" min="0" max="255" id="R-input"class ="gradiant" oninput="gradioa()">
+    </section>
+
+</body>
 </html>
