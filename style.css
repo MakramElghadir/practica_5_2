@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    font-size: 16px;
+    font-family: monospace;
+}
+
+
+h1, h2, p {
+  margin-bottom: 1em;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+section{
+    width: 100%;
+    background: url(https://media.tenor.com/4e75Fh97wlAAAAAC/emotiguy-bola-amarilla.gif);
+    height: 100vh;
+}
+
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#emoji{
+    font-size: 6em;
+    background: url(https://media.tenor.com/qMi8DuGsAZYAAAAd/schizo-twitch.gif);
+    padding: 0.5em;
+    transition: 500ms;
+    user-select: none;
+}
+
+#emoji:hover{
+    font-size: 9em;
+    padding: 0.8em;
+    transition: 500ms;
+    transform: rotate(360deg);
+}
+
+#random_emoji{
+    background: url(https://cdn.pixabay.com/animation/2022/09/27/12/02/12-02-19-627_512.gif);
+}
+
+#texto{
+  font-size: 4em;
+  background: url(https://cdn.7tv.app/emote/623979f71c974423985e25b7/4x.gif);
+  padding: 0.5em;
+  border-radius: 0.2em;
+  transition: 500ms;
+  color: rgba(202, 130, 130, 0.616);
+  box-shadow: 0px, 0px, 0px;
+}
+
+#texto:hover{
+    background: url(https://cdn.7tv.app/emote/61fae142017b2a6f053afce8/4x.gif);
+    box-shadow: 20px 20px 0px black;
+    transition: 500ms;
+    transform: translate(-20px, -20px);
+}
+
+.quarterwidth{
+    width: 25%;
+    
+}
+
+.mediumwidth{
+    width: 50%;
+}
+
+
+#color_selection{
+    background: url(https://media.tenor.com/GL-vkS_koLUAAAAC/emotiguy.gif);
+}
+
+#color_output{
+    width: 20vw;
+    height: 20vw;
+    background: black;
+    margin-bottom: 2em;
+}
+
+#gradient_output{
+    width: 20vw;
+    height: 20vw;
+    background: black;
+    margin-bottom: 2em;
+}
+
+.color-input{
+    width: 100%;
+}
